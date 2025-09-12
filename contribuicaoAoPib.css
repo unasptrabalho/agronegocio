@@ -315,7 +315,7 @@ main {
   font-weight: 300;
 }
 
-/* ===== SETOR AGRO ===== */
+
 .setor-agropecuario {
   display: flex;
   justify-content: flex-start;
@@ -418,7 +418,7 @@ nav.menuHamburguer {
   right: -17.5rem; 
   width: 17.5rem;  
   height: 100vh;
-  background-color: rgba(31, 58, 35, 0.9); /* fundo verde escuro com 90% opacidade */
+  background-color: rgba(31, 58, 35, 0.9); 
   color: var(--letra-menu);
   padding: 1.25rem;
   box-shadow: -0.1875rem 0 0.625rem rgba(0,0,0,0.3); 
@@ -427,8 +427,8 @@ nav.menuHamburguer {
   flex-direction: column;
   gap: 0.9375rem;
   border-radius: 0.9375rem 0 0 0.9375rem;
-  background: rgba(31, 58, 35, 0.6); /* fundo semi-transparente */
-  backdrop-filter: blur(8px); /* aplica desfoque no que está atrás */
+  background: rgba(31, 58, 35, 0.6); 
+  backdrop-filter: blur(8px); 
 }
 
 
@@ -437,7 +437,7 @@ nav.menuHamburguer.aberto {
 }
 
 .btnFecharMenu {
-  position: absolute;         /* Fixa no topo dentro do menu */
+  position: absolute;        
   top: 1rem;
   right: 1rem;
   background: none;
@@ -446,7 +446,7 @@ nav.menuHamburguer.aberto {
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
-  z-index: 2000;              /* Garante que fique clicável acima de tudo */
+  z-index: 2000;             
   transition: transform 0.2s ease, color 0.2s ease;
 
 }
@@ -610,8 +610,8 @@ dialog[open] {
 }
 
 header {
-  background: transparent !important; /* garante que não pega verde */
-  position: absolute; /* coloca o header por cima da imagem hero */
+  background: transparent !important;
+  position: absolute; /
   top: 0;
   left: 0;
   width: 100%;
@@ -620,5 +620,5 @@ header {
 }
 
 header .logo img {
-  max-height: 6rem; /* ajuste o tamanho do logo se precisar */
+  max-height: 6rem; 
 }

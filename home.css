@@ -11,7 +11,7 @@
   --branco: #ffffff;
   --cinza-linha: rgba(255, 255, 255, 0.4);
 
-  /* variáveis que estavam faltando */
+  
   --letra-menu: #ffffff;
   --bloco-enviar: #d5ec9f;
   --precisa-bloco: #507A4F;
@@ -38,7 +38,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  z-index: 1400; /* sempre acima do header */
+  z-index: 1400; 
 }
 
 .btnHamburguer img {
@@ -57,7 +57,7 @@ nav.menuHamburguer {
   color: var(--letra-menu);
   padding: 1.25rem;
   box-shadow: -0.1875rem 0 0.625rem rgba(0,0,0,0.3);
-  z-index: 1350; /* acima do header */
+  z-index: 1350; 
   display: flex;
   flex-direction: column;
   gap: 0.9375rem;
@@ -216,15 +216,15 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: transparent; /* remove a faixa branca */
-  border-bottom: none;     /* tira a linha branca */
-  z-index: 1000;           /* fica por cima da imagem */
+  background: transparent; 
+  border-bottom: none;     
+  z-index: 1000;           
   padding: 1rem 2rem;
 }
 
 .logo img {
   height: 5.625rem;
-  background: transparent; /* garante que não tenha fundo */
+  background: transparent; 
 }
 
 .menu-toggle {

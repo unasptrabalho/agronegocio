@@ -39,7 +39,12 @@ header {
   padding: 1.25rem 1.25rem 0.625rem;
   background-color: transparent;
   box-sizing: border-box;
-  border-bottom: 0.0625rem solid #fff; /* Esta é a linha abaixo do cabeçalho */
+ 
+}
+.lin{
+margin-top: 7rem;
+width: 110rem;
+margin-left: 5rem;
 }
 
 
