@@ -252,17 +252,21 @@ header {
 .hero {
   background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
   url("imgsEdutec/img6_sobrenos.png") no-repeat center center;
-background-size: cover; /* faz a imagem cobrir tudo */
-background-attachment: fixed; /* opcional, dá efeito parallax */
+background-size: cover; 
+background-attachment: fixed; 
 color: #fff;
 text-align: left;
 padding: 6rem 2rem;
-height: 100vh;  /
+height: 100vh;  
 width: 100vw;   
 display: flex;
 align-items: center;
 justify-content: flex-start;
 margin: 0;  
+}
+.lin{
+  margi
+  width: 10rem;
 }
 
 .hero-content {
