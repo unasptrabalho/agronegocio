@@ -464,3 +464,23 @@ nav.menuHamburguer a:hover {
   height: auto;
   margin: 0;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 0.0625rem solid #FFFFFF;
+  margin-bottom: 2rem;
+}
+
+.logo img {
+  height: 5.625rem;
+}
+
+.linha {
+  flex-grow: 1;
+  height: 0.0625rem;
+  background-color: #FFFFFF;
+  margin-left: 2rem;
+}
