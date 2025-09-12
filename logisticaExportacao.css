@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -27,12 +27,12 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== MENU HAMBURGUER ===== */
+
 .btnHamburguer {
   position: fixed;
   top: 0.9375rem;  
   right: 0.9375rem; 
-  background-color: var(--verde-escuro); 
+  background-color: transparent; 
   border: none;
   cursor: pointer;
   z-index: 1100;
@@ -118,7 +118,7 @@ nav.menuHamburguer a:hover {
   background-color: #3e653b;
 }
 
-/* ====== MODAIS ====== */
+
 dialog {
   position: fixed;
   z-index: 2000;
@@ -205,7 +205,7 @@ dialog[open] {
   font-weight: 400;
 }
 
-/* ===== HEADER FIXO ===== */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -239,7 +239,7 @@ header {
   font-size: 1rem;
 }
 
-/* ===== CONTEÚDO ===== */
+
 main {
   padding: 2rem 0;
 }
@@ -272,7 +272,7 @@ main {
   width: 100%;
 }
 
-/* ===== IMAGENS ===== */
+
 .imagens-sobrepostas {
   flex: 1; 
   position: relative;
@@ -327,7 +327,7 @@ main {
   right: -0.9375rem; 
 }
 
-/* ===== RESPONSIVIDADE ===== */
+
 @media (max-width: 768px) {
   body {
       padding: 0 2rem;

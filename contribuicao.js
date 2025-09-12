@@ -7,7 +7,6 @@ const modalForm = document.getElementById('modalForm');
 const modalConfirmacao = document.getElementById('modalConfirmacao');
 const formContato = document.getElementById('formContato');
 
-
 function voltarPaginaInicial() {
   menuHamburguer.classList.remove('aberto'); 
   btnHamburguer.style.display = 'block'; 
@@ -15,15 +14,12 @@ function voltarPaginaInicial() {
   if (modalConfirmacao.open) modalConfirmacao.close();
 }
 
-
 btnHamburguer.addEventListener('click', () => {
   menuHamburguer.classList.add('aberto');
   btnHamburguer.style.display = 'none';
 });
 
-
 btnFecharMenu.addEventListener('click', voltarPaginaInicial);
-
 
 btnAbrirModal.addEventListener('click', () => {
   menuHamburguer.classList.remove('aberto');
@@ -31,11 +27,9 @@ btnAbrirModal.addEventListener('click', () => {
   modalForm.showModal();
 });
 
-
 document.querySelectorAll('dialog .fechar').forEach(btn => {
   btn.addEventListener('click', voltarPaginaInicial);
 });
-
 
 formContato.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -43,3 +37,4 @@ formContato.addEventListener('submit', (e) => {
   modalConfirmacao.showModal();
   formContato.reset();
 });
+

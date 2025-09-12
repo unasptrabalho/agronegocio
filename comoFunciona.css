@@ -274,3 +274,193 @@ font-size: 1rem;
 
 
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+  color: #fff;
+  background-color: rgba(40, 61, 40, 1);
+  font-size: 1rem;
+}
+
+.btnHamburguer {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.btnHamburguer img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+nav.menuHamburguer {
+  position: fixed;
+  top: 0;
+  right: -17.5rem;
+  width: 17.5rem;
+  height: 100vh;
+  background-color: #1f3a23;
+  color: #fff;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+nav.menuHamburguer.aberto {
+  right: 0;
+}
+
+nav.menuHamburguer img.logoMenu {
+  width: 12rem;
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+nav.menuHamburguer a {
+  text-align: left;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.3rem;
+}
+
+nav.menuHamburguer a:hover {
+  color: #D5EC9F;
+}
+
+.btnFecharMenu {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.precisaDeAjuda {
+  margin-top: auto;
+  text-align: center;
+}
+
+.precisaDeAjuda button {
+  width: 11rem;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  background-color: #507A4F;
+  border: none;
+  color: #DCC6AA;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.precisaDeAjuda button:hover {
+  background-color: #3e653b;
+}
+
+.como-funciona {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.como-funciona h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  color: rgba(197, 240, 154, 1);
+  display: inline-block;
+}
+
+.lin {
+  margin: 1rem auto;
+  width: 55rem;
+  max-width: 90%;
+}
+
+.como-funciona p {
+  font-size: 1.1rem;
+  max-width: 62.5rem;
+  margin: 0 auto;
+  line-height: 1.6;
+  color: #c9c9c9;
+}
+
+.como-funciona img {
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 2.5rem auto 0;
+  display: block;
+}
+
+.cards, .cards2 {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.cards h2, .cards2 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(185, 154, 51, 1);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6 {
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 20rem;
+  max-width: 40rem;
+}
+
+.card1 { background: #598758; }
+.card2 { background: #507A4F; }
+.card3 { background: #476C46; }
+.card4 { background: rgba(197, 164, 54, 1); }
+.card5 { background: rgba(221, 185, 61, 1); }
+.card6 { background: rgba(246, 205, 68, 1); }
+
+.card1 h3, .card2 h3, .card3 h3, .card4 h3, .card5 h3, .card6 h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.625rem;
+  color: #fff;
+}
+
+.card1 p, .card2 p, .card3 p, .card4 p, .card5 p, .card6 p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: #c9c9c9;
+  margin-bottom: 1.25rem;
+}
+
+.card1 em, .card2 em, .card3 em, .card4 em, .card5 em, .card6 em {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f7b731;
+  font-style: normal;
+}
+
+.comoimg {
+  padding-top: 2rem;
+  width: auto;
+  height: auto;
+  margin: 0;
+}

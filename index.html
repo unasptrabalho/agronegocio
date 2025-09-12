@@ -9,38 +9,72 @@
 
 </head>
 <body>
-  <header class="site-header" aria-label="Cabeçalho">
-    <!-- Botão hambúrguer -->
-    <button id="btnHamburguer" class="btnHamburguer" aria-label="Abrir menu">
-      <img src="imgsEdutec/menuHamburguer.png" alt="" />
+  <div class="menu-site">
+    <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer">
+      <img src="./imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
     </button>
 
-    <!-- Menu lateral -->
     <nav class="menuHamburguer" aria-label="Menu de navegação">
-      <button id="btnFecharMenu" class="btnFecharMenu" aria-label="Fechar menu">&times;</button>
+      <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu">&times;</button>
 
-      <img class="logoMenu" src="imgsEdutec/logoBranco.png" alt="Logo AgroTech" />
+      <img class="logoMenu" src="./imgsEdutec/logo_hamburguer.png" alt=Logo AgroTtech" />
 
       <a href="./index.html">HOME</a>
+      <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
       <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
       <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
       <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
       <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
       <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
-      <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
       <a href="./jogo1.html">PRATICANDO</a>
       <a href="./sobreNos.html">SOBRE NÓS</a>
 
       <div class="precisaDeAjuda">
-        <button type="button">
-          <a href="./sobreNos.html">SOBRE NÓS</a>
-        </button>
+        <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
       </div>
     </nav>
-  </header>
 
+
+    <dialog id="modalForm">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar formulário">&times;</button>
+        <form id="formContato">
+          <label for="email">Digite seu e-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Digite sua dúvida:</label>
+          <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </dialog>
+
+  
+    <dialog id="modalConfirmacao">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+        <div class="centralizar-retangulo">
+          <div class="retangulo">
+            <h1>Obrigado por nos contatar!</h1>
+            <div class="linha"></div>
+            <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações.
+              Estamos à disposição para ajudar no que for preciso.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  <header>
+    <div class="logo">
+      <img src="imgsEdutec/logoBranco.png" alt="Agrotech Logo">
+    </div>
+  
+  </header>
+ <hr class="lin">
   <main>
-    <!-- Capa -->
+   
     <section class="hero">
       <div class="hero-content">
         <h2>Bem-vindo ao nosso site de agronegócio!</h2>

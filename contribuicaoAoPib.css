@@ -1,11 +1,10 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* VARIÁVEIS DO MENU */
+
 :root {
   --verde-base: #283D28;
   --letra-menu: #FFFFFF;
@@ -20,7 +19,7 @@
 }
 
 
-/* ===== ESTILOS GERAIS ===== */
+
 body {
   font-family: 'League Spartan', sans-serif;
   margin: 0;
@@ -75,19 +74,21 @@ body {
 nav.menuHamburguer {
   position: fixed;
   top: 0;
-  right: -17.5rem; 
-  width: 17.5rem;  
+  right: -17.5rem;
+  width: 17.5rem;
   height: 100vh;
-  background-color: var(--verde-escuro);
+  background-color: var(--verde-escuro); 
   color: var(--letra-menu);
-  padding: 1.25rem; 
-  box-shadow: -0.1875rem 0 0.625rem rgba(0,0,0,0.3); 
+  padding: 1.25rem;
+  box-shadow: -0.1875rem 0 0.625rem rgba(0,0,0,0.3);
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  gap: 0.9375rem; 
-  border-radius: 0.9375rem 0 0 0.9375rem; 
+  gap: 0.9375rem;
+  border-radius: 0.9375rem 0 0 0.9375rem;
+  transition: right 0.3s ease;
 }
+
 
 nav.menuHamburguer.aberto {
   right: 0;
@@ -147,7 +148,7 @@ nav.menuHamburguer a:hover {
   background-color: #3e653b;
 }
 
-/* 🔹 Correção dos dialogs */
+
 dialog {
   position: fixed;
   z-index: 2000;
@@ -277,7 +278,7 @@ main {
   width: 100%;
 }
 
-/* ===== HERO ===== */
+
 .hero {
   position: relative; 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imgsEdutec/img1_contribuicaoaopib.png');
@@ -350,7 +351,7 @@ main {
   font-weight: 300;
 }
 
-/* ===== AGRO CONECTA ===== */
+
 .agro-conecta {
   text-align: center;
   padding: 0 1.25rem 3.125rem;
@@ -396,12 +397,11 @@ main {
   line-height: 150%;
 }
 
-/* ===== MENU HAMBÚRGUER ===== */
 .btnHamburguer {
   position: fixed;
   top: 0.9375rem;  
   right: 0.9375rem; 
-  background-color: var(--verde-escuro); 
+  background-color: none; 
   border: none;
   cursor: pointer;
   z-index: 1100;
@@ -418,29 +418,37 @@ nav.menuHamburguer {
   right: -17.5rem; 
   width: 17.5rem;  
   height: 100vh;
-  background-color: var(--verde-escuro);
+  background-color: rgba(31, 58, 35, 0.9); /* fundo verde escuro com 90% opacidade */
   color: var(--letra-menu);
-  padding: 1.25rem; 
+  padding: 1.25rem;
   box-shadow: -0.1875rem 0 0.625rem rgba(0,0,0,0.3); 
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  gap: 0.9375rem; 
-  border-radius: 0.9375rem 0 0 0.9375rem; 
-  transition: right 0.3s ease;
+  gap: 0.9375rem;
+  border-radius: 0.9375rem 0 0 0.9375rem;
+  background: rgba(31, 58, 35, 0.6); /* fundo semi-transparente */
+  backdrop-filter: blur(8px); /* aplica desfoque no que está atrás */
 }
+
 
 nav.menuHamburguer.aberto {
   right: 0;
 }
 
 .btnFecharMenu {
-  align-self: flex-end;
+  position: absolute;         /* Fixa no topo dentro do menu */
+  top: 1rem;
+  right: 1rem;
   background: none;
   border: none;
   color: var(--letra-menu);
-  font-size: 1.75rem; 
+  font-size: 2rem;
+  font-weight: bold;
   cursor: pointer;
+  z-index: 2000;              /* Garante que fique clicável acima de tudo */
+  transition: transform 0.2s ease, color 0.2s ease;
+
 }
 
 nav.menuHamburguer img.logoMenu {
@@ -481,7 +489,7 @@ nav.menuHamburguer a:hover {
   background-color: #3e653b;
 }
 
-/* ===== MODAIS ===== */
+
 dialog {
   position: fixed;
   z-index: 2000;
@@ -568,7 +576,7 @@ dialog[open] {
   margin-top: 0.5rem;
 }
 
-/* ===== RESPONSIVO ===== */
+
 @media (max-width: 768px) {
   .hero-text {
     padding: 9.375rem 1.25rem 0; 
