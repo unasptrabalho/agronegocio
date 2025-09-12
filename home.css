@@ -268,7 +268,7 @@ margin: 0;
   height: 0.125rem;
   background-color: var(--linha);
   width: 17.7rem;
-  margin: 0 auto 0.25rem auto;
+  margin: 0 auto 0.25rem ;
 }
 
 .hero-content {
