@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz da Fazenda</title>
+ <link rel="stylesheet" href="jogo1.css">
+  <link href="style.css" rel="stylesheet" />
+  <script src="main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet" />
+  
+</head>
+<body>
+
+
+  <div class="menu-site">
+    <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer">
+      <img src="./imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+    </button>
+
+    <nav class="menuHamburguer" aria-label="Menu de navegação">
+      <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu">&times;</button>
+
+      <img class="logoMenu" src="./imgsEdutec/logo_hamburguer.png" alt="Logo AgroTtech" />
+
+      <a href="./index.html">HOME</a>
+      <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+      <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+      <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
+      <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+      <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+      <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+      <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+      <a href="./jogo1.html">PRATICANDO</a>
+      <a href="./sobreNos.html">SOBRE NÓS</a>
+
+      <div class="precisaDeAjuda">
+        <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+      </div>
+    </nav>
+
+    <dialog id="modalForm">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar formulário">&times;</button>
+        <form id="formContato">
+          <label for="email">Digite seu e-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Digite sua dúvida:</label>
+          <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </dialog>
+
+    <dialog id="modalConfirmacao">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+        <div class="centralizar-retangulo">
+          <div class="retangulo">
+            <h1>Obrigado por nos contatar!</h1>
+            <div class="linha"></div>
+            <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações.
+              Estamos à disposição para ajudar no que for preciso.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+ 
+
+  <div class="map-wrap">
+    <section class="map-container" aria-label="Mapa da fazenda">
+      <img class="map" src="./imgsEdutec/imgfundo_jogo.png" alt="Mapa da fazenda" />
+      <img class="avatar" src="./imgsEdutec/boneco_jogo.png" alt="Avatar" style="left: 4%; top: 72%;"/>
+
+      <button class="node" data-phase="1" style="left: 10%; top: 78%;">01</button>
+      <button class="node" data-phase="2" style="left: 20%; top: 86%;">02</button>
+      <button class="node" data-phase="3" style="left: 33%; top: 93%;">03</button>
+      <button class="node" data-phase="4" style="left: 45%; top: 87%;">04</button>
+      <button class="node" data-phase="5" style="left: 57%; top: 78%;">05</button>
+      <button class="node" data-phase="6" style="left: 68%; top: 68%;">06</button>
+      <button class="node" data-phase="7" style="left: 80%; top: 60%;">07</button>
+      <button class="node" data-phase="8" style="left: 88%; top: 52%;">08</button>
+
+     
+      <img class="lock locked" data-lock="1" src="./imgsEdutec/Component 23.png" alt="cadeado" style="left: 20%; top: 86%;">
+      <img class="lock locked" data-lock="2" src="./imgsEdutec/Component 23.png" alt="cadeado" style="left: 33%; top: 93%;">
+      <img class="lock locked" data-lock="3" src="./imgsEdutec/Component 23.png" alt="cadeado" style="left: 45%; top: 87%;">
+      <img class="lock locked" data-lock="4" src="./imgsEdutec/Component 23.png" alt="cadeado" style="left: 57%; top: 78%;">
+      <img class="lock locked" data-lock="5" src="./imgsEdutec/Component 23.png" alt="cadeado" style="left: 68%; top: 68%;">
+      <img class="lock locked" data-lock="6" src="./imgsEdutec/Component 23.png" alt="cadeado" style="left: 80%; top: 60%;">
+      <img class="lock locked" data-lock="7" src="./imgsEdutec/Component 23.png" alt="cadeado" style="left: 88%; top: 52%;">
+    </section>
+  </div>
+
+  <section class="start">
+    <h2>📜 Instruções do Jogo</h2>
+    <p>Bem-vindo ao Quiz da Fazenda! Mostre que você entende tudo sobre agronegócio.</p>
+    <ol>
+      <li>Você terá três perguntas por rodada.</li>
+      <li>Escolha a alternativa correta entre as opções.</li>
+      <li>A cada fase concluída, um cadeado será desbloqueado.</li>
+      <li>Se passar por todas as fases, você recebe uma premiação especial!</li>
+    </ol>
+    <form>
+      <button class="btn">Iniciar</button>
+    </form>
+  </section>
+
+  <dialog id="quiz-modal">
+    <button id="quiz-close" class="modal-close" type="button" aria-label="Fechar"
+            onclick="document.getElementById('quiz-modal').close()">✕</button>
+
+    <form id="quiz-form" class="quiz">
+      <h3 id="quiz-title">Fase</h3>
+      <div id="quiz-questions">
+        
+      </div>
+      <div class="quiz-footer">
+        <div class="quiz-status" id="quiz-status">0/3 respondidas</div>
+       
+        <button id="btn-enviar" class="btn" type="button">Concluir</button>
+      </div>
+    </form>
+  </dialog>
+
+ 
+  <script src="jogo.js"></script>
+</body>
+</html>

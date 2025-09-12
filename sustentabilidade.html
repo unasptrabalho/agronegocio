@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustentabilidade</title>
+  <link rel="stylesheet" href="sustentabilidade.css">
+  <script src="main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menu Hambúrguer -->
+  <div class="menu-site">
+    <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer">
+      <img src="imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+    </button>
+
+    <nav class="menuHamburguer" aria-label="Menu de navegação">
+      <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu">&times;</button>
+
+      <img class="logoMenu" src="imgsEdutec/logo_hamburguer.png" alt="Logo AgroTtech" />
+
+      <a href="./index.html">HOME</a>
+      <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+      <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+      <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
+      <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+      <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+      <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+      <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+      <a href="./jogo1.html">PRATICANDO</a>
+      <a href="./sobreNos.html">SOBRE NÓS</a>
+
+      <div class="precisaDeAjuda">
+        <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+      </div>
+    </nav>
+
+    <!-- Modal Formulário -->
+    <dialog id="modalForm">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar formulário">&times;</button>
+        <form id="formContato">
+          <label for="email">Digite seu e-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Digite sua dúvida:</label>
+          <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </dialog>
+
+    <!-- Modal Confirmação -->
+    <dialog id="modalConfirmacao">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+        <div class="centralizar-retangulo">
+          <div class="retangulo">
+            <h1>Obrigado por nos contatar!</h1>
+            <div class="linha"></div>
+            <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações.
+            Estamos à disposição para ajudar no que for preciso.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <header>
+    <div class="logo">
+      <img src="imgsEdutec/logoBranco.png" alt="Agrotech Logo">
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    <div class="text-content">
+      <h1>SUSTENTABILIDADE</h1>
+      <p>No agro, a sustentabilidade combina respeito ambiental, redução de custos e aumento da produtividade, garantindo a capacidade de atender às necessidades futuras. Contudo, os profissionais do setor enfrentam desafios para implementar essas práticas diante das exigências do mercado. </p>
+      
+      <div class="info-box">
+        <h2>COMO PROMOVER O<br>AGRONEGÓCIO SUSTENTÁVEL?</h2>
+        <p>Agricultura e pecuária sustentáveis<br>preservam solo, água e meio ambiente<br>com manejo correto, rotação, bem-estar animal<br>e uso de tecnologias<br>que reduzem impactos.</p>
+      </div>
+    </div>
+
+    <div class="image-content">
+      <img src="./imgsEdutec/img1_sustentabilidade.png" alt="Trator em uma plantação ao entardecer">
+    </div>
+  </main>
+
+</body>
+</html>

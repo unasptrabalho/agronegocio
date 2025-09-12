@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agronegócio</title>
+  <link rel="stylesheet" href="casosDeSucesso.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+
+
+  <script src="casosdeSucesso.js" defer></script>
+</head>
+<body>
+
+  <div class="menu-site">
+    <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer" type="button">
+      <img src="./imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+    </button>
+
+    <nav class="menuHamburguer" aria-label="Menu de navegação">
+      <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu" type="button">&times;</button>
+      <img class="logoMenu" src="./imgsEdutec/logo_hamburguer.png" alt="Logo AgroTtech" />
+
+      <a href="./index.html">HOME</a>
+      <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+      <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+      <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
+      <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+      <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+      <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+      <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+      <a href="./jogo1.html">PRATICANDO</a>
+      <a href="./sobreNos.html">SOBRE NÓS</a>
+
+      <div class="precisaDeAjuda">
+        <button id="btnAbrirModal" type="button">PRECISA DE AJUDA?</button>
+      </div>
+    </nav>
+
+ 
+    <dialog id="modalForm">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar formulário" type="button">&times;</button>
+        <form id="formContato">
+          <label for="email">Digite seu e-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Digite sua dúvida:</label>
+          <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </dialog>
+
+    <dialog id="modalConfirmacao">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar confirmação" type="button">&times;</button>
+        <h1>Obrigado por nos contatar!</h1>
+        <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações. Estamos à disposição para ajudar no que for preciso.</p>
+      </div>
+    </dialog>
+  <div>
+ 
+
+
+  <section class="empresas">
+    <h2>EMPRESAS DE SUCESSO AGRONEGÓCIO</h2>
+    <div class="empresas-cards">
+      <div class="card">
+        <img src="./imgsEdutec/img1_sucessosdoagronegocio.png" alt="JBS">
+        <p class="titulo">JBS</p>
+        <p class="descricao">Uma das maiores processadoras de carne do mundo com forte atuação na exportação de carne bovina, suína e de frango.</p>
+      </div>
+      <div class="card">
+        <img src="./imgsEdutec/img2_sucessosdoagronegocio.png" alt="Grupo André Maggi">
+        <p class="titulo">GRUPO ANDRÉ MAGGI</p>
+        <p class="descricao">Um dos maiores produtores de soja do Brasil e referência em práticas sustentáveis.</p>
+      </div>
+      <div class="card">
+        <img src="./imgsEdutec/img3_sucessosdoagronegocio.png" alt="Ambev">
+        <p class="titulo">AMBEV</p>
+        <p class="descricao">Grande produtora de bebidas, conhecida por grandes marcas. Investe na cevada, em práticas sustentáveis e apoia agricultores e comunidades.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="pessoas">
+    <h2>NOMES DE SUCESSO AGRONEGÓCIO</h2>
+    <div class="pessoas-cards">
+      <div class="pessoa texto-cima">
+        <h3>GUILHERME LEAL</h3>
+        <p>Fundador da Natura e importante defensor da agricultura sustentável e da preservação ambiental.</p>
+        <img src="./imgsEdutec/img5_sucessosdoagronegocio.png" alt="Guilherme Leal">
+      </div>
+
+      <div class="pessoa imagem-cima">
+        <img src="./imgsEdutec/img4_sucessosdoagronegocio.png" alt="Tomazoni Gilberto">
+        <h3>TOMAZONI GILBERTO</h3>
+        <p>A JBS é a maior empresa de alimentos do Brasil e a segunda do mundo, faturando R$ 270 bilhões em 2020. Atua nos setores de carnes, couros, biodiesel e investe em proteínas vegetais.</p>
+      </div>
+
+      <div class="pessoa texto-cima">
+        <h3>DELL AQUILA RICARDO</h3>
+        <p>A Raízen é a principal produtora de etanol e a maior exportadora de açúcar do Brasil, com 26 unidades e 7 mil postos de serviço, gerando 1 gigawatt de energia a partir do bagaço da cana.</p>
+        <img src="./imgsEdutec/img6_sucessosdoagronegocio.png" alt="Dell Aquila Ricardo">
+      </div>
+    </div>
+  </section>
+</body>
+</html>

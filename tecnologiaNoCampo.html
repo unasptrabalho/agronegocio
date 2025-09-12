@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@119&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tecnologia no Campo</title>
+  <link href="tecnologiaNoCampo.css" rel="stylesheet" />
+  
+  <script src="tecnologiaNoCampo.js" defer></script>
+  
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="imgsEdutec/logoBranco.png" alt="Agrotech Logo">
+    </div>
+</header>
+
+  <div class="menu-site">
+    <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer">
+      <img src="imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+    </button>
+
+    <nav class="menuHamburguer" aria-label="Menu de navegação">
+      <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu">&times;</button>
+
+      <img class="logoMenu" src="./imgsEdutec/logoBranco.png" alt="Logo AgroTtech" />
+
+      <a href="./index.html">HOME</a>
+      <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+      <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+      <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
+      <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+      <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+      <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+      <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+      <a href="./jogo1.html">PRATICANDO</a>
+      <a href="./sobreNos.html">SOBRE NÓS</a>
+
+      <div class="precisaDeAjuda">
+        <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+      </div>
+    </nav>
+
+ 
+    <dialog id="modalForm">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar formulário">&times;</button>
+        <form id="formContato">
+          <label for="email">Digite seu e-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Digite sua dúvida:</label>
+          <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </dialog>
+
+    <dialog id="modalConfirmacao">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+        <div class="centralizar-retangulo">
+          <div class="retangulo">
+            <h1>Obrigado por nos contatar!</h1>
+            <div class="linha"></div>
+            <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações.
+              Estamos à disposição para ajudar no que for preciso.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+
+  <div class="conteudo">
+    <h1>TECNOLOGIA NO CAMPO</h1>
+    <h2>PRINCIPAIS TECNOLOGIAS</h2>
+  </div>
+
+  <div class="cards-container">
+    <div class="card">
+      <h2>ROBÓTICA</h2>
+      <div class="card-img">
+        <img src="./imgsEdutec/img1_tecnologianocampo.png" alt="ROBÓTICA">
+      </div>
+      <p>O desenvolvimento tecnológico na agricultura passou por diversas fases. Teve início na Agricultura 1.0, caracterizada pelo uso de tração animal, até chegar ao momento atual: a Agricultura 4.0, marcada pelo uso de máquinas, veículos autônomos, drones, tecnologia de satélite e robôs com sensores.</p>
+    </div>
+
+    <div class="card">
+      <h2>DRONES</h2>
+      <div class="card-img">
+        <img src="./imgsEdutec/img2_tecnologianocampo.png" alt="DRONES">
+      </div>
+      <p>Esses dispositivos fornecem dados valiosos para otimizar a proteção contra pragas, a aplicação de fertilizantes e herbicidas, além de auxiliarem na irrigação e no momento da colheita, tornando-os essenciais para a modernização da agricultura.</p>
+    </div>
+
+    <div class="card">
+      <h2>SENSORES</h2>
+      <div class="card-img">
+        <img src="./imgsEdutec/img3_tecnologianocampo.png" alt="SENSORES">
+      </div>
+      <p>Antes, a mecanização focava em aumentar a produção. Com a Agricultura 4.0, tecnologias digitais como o georreferenciamento e sensores permitem maior planejamento, coleta e análise de dados, otimizando o ciclo produtivo.</p>
+    </div>
+  </div>
+</body>
+</html>

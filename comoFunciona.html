@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comoFunciona.css">
+    <script src="comoFunciona.js" defer></script>
+    <title>Agricultura e Pecuária</title>
+</head>
+<body>
+
+<!-- Menu Home integrado -->
+<div class="menuSite">
+  <!-- Botão Hamburguer -->
+  <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer">
+    <img src="./imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+  </button>
+
+  <!-- Menu Hambúrguer -->
+  <nav class="menuHamburguer" aria-label="Menu de navegação">
+    <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu">&times;</button>
+
+    <img class="logoMenu" src="./imgsEdutec/logoBranco.png" alt="Logo AgroTtech" />
+
+    <a href="./index.html">HOME</a>
+    <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+    <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+    <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
+    <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+    <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+    <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+    <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+    <a href="./jogo.html">PRATICANDO</a>
+    <a href="./sobreNos.html">SOBRE NÓS</a>
+
+    <div class="precisaDeAjuda">
+      <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+    </div>
+  </nav>
+
+  <!-- Modal Contato -->
+  <dialog id="modalForm">
+    <div class="modal-content">
+      <button class="fechar" aria-label="Fechar formulário">&times;</button>
+      <form id="formContato">
+        <label for="email">Digite seu e-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensagem">Digite sua dúvida:</label>
+        <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </dialog>
+
+  <!-- Modal Confirmação -->
+  <dialog id="modalConfirmacao">
+    <div class="modal-content">
+      <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+      <h1>Obrigado por nos contatar!</h1>
+      <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações. Estamos à disposição para ajudar no que for preciso.</p>
+    </div>
+  </dialog>
+</div>
+<!-- Fim Menu -->
+
+<div class="como-funciona">
+    <h1>COMO FUNCIONA?</h1>
+    <hr class="lin">
+    <p>A agricultura e a pecuária são pilares essenciais para a segurança alimentar e o desenvolvimento econômico. O cultivo de alimentos e o manejo responsável dos rebanhos garantem o abastecimento das populações geram empregos e movimentam a economia. Além disso, práticas sustentáveis nesses setores ajudam a preservar os recursos naturais, promovendo um equilíbrio entre produção e meio ambiente.</p>
+    <img src="./imgsEdutec/img1_comofunciona.png" alt="Agricultura e pecuária">
+</div>
+
+<div class="cards">
+    <h2>CULTIVO NA AGRICULTURA</h2>
+    
+    <div class="card1">
+        <h3>Cultivar é Sustentar</h3>
+        <p>A agricultura vai além da produção de alimentos. É ela que sustenta comunidades, movimenta economias e protege o solo com práticas conscientes.</p>
+        <p><em>Produzir com equilíbrio é garantir o amanhã.</em></p>
+    </div>
+    
+    <div class="card2">
+        <h3>Do Campo para a Cidade</h3>
+        <p>A agricultura vai além da produção de alimentos. É ela que sustenta comunidades, movimenta economias e protege o solo com práticas conscientes.</p>
+        <p><em>O ciclo da vida começa no solo.</em></p>
+    </div>
+    
+    <div class="card3">
+        <h3>Tecnologia no Cultivo</h3>
+        <p>Do plantio à colheita, a inovação tem revolucionado o campo. Agricultura moderna é sinônimo de produtividade com responsabilidade.</p>
+        <p><em>Menos: impacto, mais alimento.</em></p>
+    </div>
+</div>
+
+<div class="cards2">
+    <h2>MANEJO NA PECUÁRIA</h2>
+
+    <div class="card4">
+        <h3>Campo forte, Economia Viva</h3>
+        <p>A criação de animais movimenta cadeias produtivas e fortalece regiões. <br>Onde há pecuária consciente, há desenvolvimento.</p>
+        <p><em>Mais empregos, mais renda, mais futuro.</em></p>
+    </div>
+    
+    <div class="card5">
+        <h3>Produzir sem exageros</h3>
+        <p>Com técnicas modernas, é possível criar mais com menos. <br> A pecuária sustentável reduz impactos ambientais e melhora a eficiência.</p>
+        <p><em>Cuidar da terra é parte do processo.</em></p>
+    </div>
+    
+    <div class="card6">
+        <h3>Pecuária</h3>
+        <p>Uma pecuaria bem manejada respeita o animal e entrega produtos de alto valor nutricional.</p>
+        <p><em>Animais saudáveis, alimentos confiáveis.</em></p>
+    </div>
+
+    <div class="comoimg">
+        <img src="./imgsEdutec/img2_comofunciona.png" alt="MANEJO NA PECUÁRIA">
+    </div>
+</div>
+
+</body>
+</html>

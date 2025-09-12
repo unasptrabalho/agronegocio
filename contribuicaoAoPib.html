@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contribuição ao PIB</title>
+  <link rel="stylesheet" href="contribuicaoAoPib.css">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+
+ 
+  <script src="contribuicao.js" defer></script>
+</head>
+<body>
+  
+  <div class="menu-site">
+    <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer">
+      <img src="./imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+    </button>
+
+    <nav class="menuHamburguer" aria-label="Menu de navegação">
+      <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu">&times;</button>
+
+      <img class="logoMenu" src="./imgsEdutec/logo_hamburguer.png" alt=Logo AgroTtech" />
+
+      <a href="./index.html">HOME</a>
+      <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+      <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+      <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
+      <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+      <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+      <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+      <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+      <a href="./jogo1.html">PRATICANDO</a>
+      <a href="./sobreNos.html">SOBRE NÓS</a>
+
+      <div class="precisaDeAjuda">
+        <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+      </div>
+    </nav>
+
+
+    <dialog id="modalForm">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar formulário">&times;</button>
+        <form id="formContato">
+          <label for="email">Digite seu e-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="mensagem">Digite sua dúvida:</label>
+          <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </dialog>
+
+  
+    <dialog id="modalConfirmacao">
+      <div class="modal-content">
+        <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+        <div class="centralizar-retangulo">
+          <div class="retangulo">
+            <h1>Obrigado por nos contatar!</h1>
+            <div class="linha"></div>
+            <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações.
+              Estamos à disposição para ajudar no que for preciso.</p>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  <header>
+    <div class="logo">
+      <img src="imgsEdutec/logoBranco.png" alt="Agrotech Logo">
+    </div>
+  
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2 class="hero-subtitle">CONHEÇA O PROJETO</h2>
+        <h1 class="hero-title">AGROTECH</h1>
+        <p class="hero-paragraph">
+          O IBGE classifica a agropecuária, que inclui cultivo, criação de animais, pesca e<br>
+          aquicultura, e publica dados do PIB relacionados à produção agrícola e pecuária.
+        </p>
+      </div>
+    </section>
+
+    <section class="setor-agropecuario">
+      <img src="imgsEdutec/img2_contribuicaoaopib.png" alt="Muda de planta">
+      <div class="setor-text">
+        <h2 class="setor-title">SETOR AGROPECUÁRIO</h2>
+        <p class="setor-paragraph">
+          Agrotech, no setor agropecuário, refere-se ao uso de inovações tecnológicas para aumentar a produtividade, reduzir custos, melhorar a sustentabilidade e otimizar a gestão tanto das lavouras quanto da criação de animais.
+        </p>
+      </div>
+    </section>
+
+    <section class="agro-conecta">
+      <div class="line-divider"></div>
+      <h2 class="agro-conecta-title">O Agro Conecta, Alimenta e Transforma</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="imgsEdutec/img3_contribuicaoaopib.png" alt="Plantação">
+          <p class="card-paragraph">
+            Ele promove inovação e sustentabilidade. Cada semente plantada é um passo para um futuro melhor, onde o campo e a cidade se conectam para garantir alimento e progresso. Valorizar o agro é fortalecer nossa nação e cuidar do nosso amanhã.
+          </p>
+        </div>
+        <div class="card">
+          <img src="imgsEdutec/img4_contribuicaoaopib.png" alt="Trator no campo">
+          <p class="card-paragraph">
+            O Agro é a base que alimenta o mundo e move economias. Além de gerar empregos e riqueza, impulsiona o desenvolvimento sustentável, promove inovação tecnológica e fortalece a conexão entre o campo e a cidade.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
