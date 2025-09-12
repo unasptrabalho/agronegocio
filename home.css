@@ -265,9 +265,10 @@ justify-content: flex-start;
 margin: 0;  
 }
 .lin{
-  margi
-  width: 10rem;
-  height: 20px;
+  height: 0.125rem;
+  background-color: var(--linha);
+  width: 17.7rem;
+  margin: 0 auto 0.25rem auto;
 }
 
 .hero-content {
