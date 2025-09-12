@@ -377,3 +377,17 @@ height: auto;
 margin-bottom: 15px;
 object-fit: cover;
 }
+/* Menu topo: logo à esquerda, hambúrguer à direita */
+.menu-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--verde-escuro);
+}
+
+.menu-topo .logoMenu {
+  width: 150px;
+  height: auto;
+}
+

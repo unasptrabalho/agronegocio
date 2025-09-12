@@ -6,68 +6,74 @@
   <title>Agronegócio</title>
   <link rel="stylesheet" href="casosDeSucesso.css">
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
-
 
   <script src="casosdeSucesso.js" defer></script>
 </head>
 <body>
 
-  <div class="menu-site">
-    <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer" type="button">
-      <img src="./imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
+  <!-- MENU TOPO COM LOGO E BOTÃO -->
+  <div class="menu-topo">
+    <img class="logoMenu" src="imgsEdutec/logoBranco.png" alt="Logo AgroTtech" />
+    <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer">
+      <img src="imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
     </button>
+  </div>
 
-    <nav class="menuHamburguer" aria-label="Menu de navegação">
-      <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu" type="button">&times;</button>
-      <img class="logoMenu" src="./imgsEdutec/logo_hamburguer.png" alt="Logo AgroTtech" />
+  <!-- LINHA ABAIXO DO MENU -->
+  <hr class="linha-menu">
 
-      <a href="./index.html">HOME</a>
-      <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
-      <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
-      <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
-      <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
-      <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
-      <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
-      <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
-      <a href="./jogo1.html">PRATICANDO</a>
-      <a href="./sobreNos.html">SOBRE NÓS</a>
+  <!-- MENU HAMBURGUE LATERAL -->
+  <nav class="menuHamburguer" aria-label="Menu de navegação">
+    <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu">&times;</button>
 
-      <div class="precisaDeAjuda">
-        <button id="btnAbrirModal" type="button">PRECISA DE AJUDA?</button>
-      </div>
-    </nav>
+    <a href="./index.html">HOME</a>
+    <a href="./tecnologiaNoCampo.html">TECNOLOGIA NO CAMPO</a>
+    <a href="./contribuicaoAoPib.html">CONTRIBUIÇÃO AO PIB</a>
+    <a href="./logisticaExportacao.html">LOGÍSTICA E EXPORTAÇÃO</a>
+    <a href="./sustentabilidade.html">SUSTENTABILIDADE</a>
+    <a href="./comoFunciona.html">COMO FUNCIONA ?</a>
+    <a href="./casosDeSucesso.html">CASOS DE SUCESSO DO AGRONEGÓCIO</a>
+    <a href="./feirasEeventos.html">FEIRAS E EVENTOS</a>
+    <a href="./jogo1.html">PRATICANDO</a>
+    <a href="./sobreNos.html">SOBRE NÓS</a>
 
- 
-    <dialog id="modalForm">
-      <div class="modal-content">
-        <button class="fechar" aria-label="Fechar formulário" type="button">&times;</button>
-        <form id="formContato">
-          <label for="email">Digite seu e-mail:</label>
-          <input type="email" id="email" name="email" required />
+    <div class="precisaDeAjuda">
+      <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
+    </div>
+  </nav>
 
-          <label for="mensagem">Digite sua dúvida:</label>
-          <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
+  <!-- MODAL CONTATO -->
+  <dialog id="modalForm">
+    <div class="modal-content">
+      <button class="fechar" aria-label="Fechar formulário">&times;</button>
+      <form id="formContato">
+        <label for="email">Digite seu e-mail:</label>
+        <input type="email" id="email" name="email" required />
 
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </dialog>
+        <label for="mensagem">Digite sua dúvida:</label>
+        <textarea id="mensagem" name="mensagem" required rows="5"></textarea>
 
-    <dialog id="modalConfirmacao">
-      <div class="modal-content">
-        <button class="fechar" aria-label="Fechar confirmação" type="button">&times;</button>
-        <h1>Obrigado por nos contatar!</h1>
-        <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações. Estamos à disposição para ajudar no que for preciso.</p>
-      </div>
-    </dialog>
-  <div>
- 
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </dialog>
 
+  <!-- MODAL CONFIRMAÇÃO -->
+  <dialog id="modalConfirmacao">
+    <div class="modal-content">
+      <button class="fechar" aria-label="Fechar confirmação">&times;</button>
+      <h1>Obrigado por nos contatar!</h1>
+      <p>Ficamos felizes com seu interesse e em breve retornaremos com mais informações. Estamos à disposição para ajudar no que for preciso.</p>
+    </div>
+  </dialog>
 
+  <!-- HERO HOME -->
+  
+
+  <!-- EMPRESAS -->
   <section class="empresas">
     <h2>EMPRESAS DE SUCESSO AGRONEGÓCIO</h2>
     <div class="empresas-cards">
@@ -89,7 +95,7 @@
     </div>
   </section>
 
-
+  <!-- PESSOAS -->
   <section class="pessoas">
     <h2>NOMES DE SUCESSO AGRONEGÓCIO</h2>
     <div class="pessoas-cards">
@@ -112,5 +118,6 @@
       </div>
     </div>
   </section>
+
 </body>
 </html>
