@@ -250,20 +250,23 @@ header {
 
 
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)),
-  url("imgsEdutec/img6_sobrenos.png") no-repeat center center;
-background-size: cover; 
-background-attachment: fixed; 
-color: #fff;
-text-align: left;
-padding: 6rem 2rem;
-height: 100vh;  
-width: 100vw;   
-display: flex;
-align-items: center;
-justify-content: flex-start;
-margin: 0;  
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("imgsEdutec/img6_sobrenos.png") no-repeat center top;
+  background-size: cover; 
+  /* Removendo o fixed para evitar que o topo fique vazio */
+  /* background-attachment: fixed; */ 
+  color: #fff;
+  text-align: left;
+  padding: 6rem 2rem;
+  height: 100vh;  
+  width: 100vw;   
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;  
 }
+
+
 .lin{
   height: 0.125rem;
   background-color: var(--linha);

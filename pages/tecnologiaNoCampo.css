@@ -1,11 +1,14 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* VARIÁVEIS */
 :root {
   --verde-base: #283D28;
+  --verde-escuro: #1f3a23;
   --letra-menu: #FFFFFF;
   --precisa-bloco: #507A4F;
   --precisa-letra: #DCC6AA;
@@ -14,60 +17,124 @@
   --letra-enviar: #003713;
   --letra-marrom: #633216;
   --linha: #000000;
-  --verde-escuro: #1f3a23;
 }
 
+/* BODY */
 body {
-  margin: 0;
   font-family: 'League Spartan', sans-serif;
   font-size: 1rem;
   background-color: var(--verde-base);
   color: var(--letra-menu);
 }
 
+/* HEADER */
 header {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 112.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 1.25rem 0.625rem;
   background-color: transparent;
-  box-sizing: border-box;
- 
 }
-.lin{
-margin-top: 7rem;
-width: 110rem;
-margin-left: 5rem;
-}
-
 
 .logo img {
   height: 6.25rem;
 }
 
+/* LINHA UNDER HEADER */
+.lin {
+  margin-top: 7rem;
+  width: 110rem;
+  margin-left: 5rem;
+}
 
-nav .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: #fff;
+/* CONTEÚDO */
+.conteudo {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: -4rem;
+}
+
+.conteudo h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.conteudo h2 {
   font-size: 1.5rem;
-  cursor: pointer;
+  font-weight: bold;
+  color: #ffb300;
 }
 
-nav .menu-links a {
+/* CARDS */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
   color: #fff;
-  text-decoration: none;
-  margin-left: 1.25rem;
+  text-align: left;
+  margin: 2rem;
 }
 
+.card-img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+}
+
+.card h2,
+.card p {
+  position: relative;
+  z-index: 2;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffb300;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 12px;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.64);
+  line-height: 1.2rem;
+}
+
+/* MENU HAMBURGUER */
 .btnHamburguer {
   position: fixed;
   top: 0.9375rem;  
@@ -84,11 +151,6 @@ nav .menu-links a {
   width: 1.875rem;  
   height: 1.875rem; 
 }
-
-.btnHamburguer.escondido {
-  display: none;
-}
-
 
 nav.menuHamburguer {
   position: fixed;
@@ -124,8 +186,6 @@ nav.menuHamburguer.aberto {
 nav.menuHamburguer img.logoMenu {
   width: 15rem; 
   height: auto;   
-  position: relative;
-  top: -1rem;
   margin: 0 auto;
 }
 
@@ -143,7 +203,6 @@ nav.menuHamburguer a:hover {
   color: var(--bloco-enviar);
   background-color: rgba(255,255,255,0.05);
 }
-
 
 .precisaDeAjuda {
   display: flex;
@@ -169,7 +228,7 @@ nav.menuHamburguer a:hover {
   background-color: #3e653b;
 }
 
-
+/* MODAIS */
 dialog {
   position: fixed;
   z-index: 2000;
@@ -214,7 +273,6 @@ dialog[open] {
   cursor: pointer;
   color: var(--bloco-enviar);
 }
-
 
 #modalConfirmacao .modal-content {
   text-align: center;
@@ -262,7 +320,7 @@ dialog[open] {
   font-weight: 400;
 }
 
-
+/* FORMULÁRIOS */
 label {
   display: block;
   margin-bottom: 0.375rem;
@@ -297,89 +355,4 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
   background-color: #a1bf6f;
-}
-
-.conteudo {
-  text-align: center;
-  margin-top: 6rem;
-  margin-bottom: -4rem;
-  font-family: 'League Spartan', sans-serif;
-  
-}
-
-.conteudo h1 {
-  font-size: 3rem;
-  margin-bottom: 15px;
-}
-
-.conteudo h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffb300;
-}
-
-.cards-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 50px;
-}
-
-
-.card {
-  position: relative;
-  width: 320px;
-  height: 450px;
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px;
-  color: #fff;
-  text-align: left;
-  margin: 2rem;
-}
-
-
-.card-img {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-
-.card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.45);
-  z-index: 1;
-}
-
-
-.card h2,
-.card p {
-  position: relative;
-  z-index: 2;
-}
-
-.card h2 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #ffb300;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 12px;
-  border-radius: 1rem;
-  background-color:rgba(0, 0, 0, 0.64);
-  line-height: 1.2rem;
 }

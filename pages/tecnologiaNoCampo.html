@@ -2,24 +2,29 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@119&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tecnologia no Campo</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@119&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
   <link href="tecnologiaNoCampo.css" rel="stylesheet" />
   
+  <!-- JS -->
   <script src="tecnologiaNoCampo.js" defer></script>
-  
 </head>
 <body>
+  <!-- MENU SITE -->
   <div class="menu-site">
     <button id="btnHamburguer" aria-label="Abrir menu" class="btnHamburguer">
       <img src="./imgsEdutec/menuHamburguer.png" alt="ícone do menu hamburguer" />
     </button>
 
     <nav class="menuHamburguer" aria-label="Menu de navegação">
-      <button id="btnFecharMenu" aria-label="Fechar menu" class="btnFecharMenu">&times;</button>
+      <button id="btnFecharMenu" class="btnFecharMenu" aria-label="Fechar menu">&times;</button>
 
       <img class="logoMenu" src="./imgsEdutec/logo_hamburguer.png" alt="Logo AgroTtech" />
 
@@ -33,12 +38,36 @@
       <a href="./jogo1.html">PRATICANDO</a>
       <a href="./sobreNos.html">SOBRE NÓS</a>
 
+
+      <div class="Cadastro">
+        <button id="Cadastro">Cadastro</button>
+      </div>
+      <dialog id="Cadastro">
+  
+        <div pagina-cadastro>
+          <form id="form-cadastro">
+            <label for="email">Digite seu e-mail:</label>
+          <input type="email" id="email" name="email" required />
+  
+          <label for="Nome">Digite seu nome completo:</label>
+          <input type="text" id="nome" name="nome" required />
+  
+          <label for="senha">Digite sua senha:</label>
+          <input type="password"" name="email" required />
+  
+          <button id="Login">Já possui cadastro? faça login</button>
+           
+          <button type="submit">Enviar</button>
+  
+          </form>
+        </div>
+
       <div class="precisaDeAjuda">
         <button id="btnAbrirModal">PRECISA DE AJUDA?</button>
       </div>
     </nav>
 
-  
+    <!-- Modal Form -->
     <dialog id="modalForm">
       <div class="modal-content">
         <button class="fechar" aria-label="Fechar formulário">&times;</button>
@@ -54,6 +83,7 @@
       </div>
     </dialog>
 
+    <!-- Modal Confirmação -->
     <dialog id="modalConfirmacao">
       <div class="modal-content">
         <button class="fechar" aria-label="Fechar confirmação">&times;</button>
@@ -68,13 +98,17 @@
       </div>
     </dialog>
   </div>
+
+  <!-- HEADER -->
   <header>
     <div class="logo">
       <img src="imgsEdutec/logoBranco.png" alt="Agrotech Logo">
     </div>
-</header>
+  </header>
 
   <hr class="lin">
+
+  <!-- CONTEÚDO -->
   <div class="conteudo">
     <h1>TECNOLOGIA NO CAMPO</h1>
     <h2>PRINCIPAIS TECNOLOGIAS</h2>

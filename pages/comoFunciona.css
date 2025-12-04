@@ -478,9 +478,4 @@ header {
   height: 5.625rem;
 }
 
-.linha {
-  flex-grow: 1;
-  height: 0.0625rem;
-  background-color: #FFFFFF;
-  margin-left: 2rem;
-}
+
